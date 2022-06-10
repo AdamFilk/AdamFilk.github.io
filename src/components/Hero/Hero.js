@@ -19,13 +19,16 @@ const Hero = (props) => (
         I'm a web developer and I build awesome websites, web applications and
         other web services. Learn more about me from my resume
       </SectionText>
-      <Button
-        onClick={() =>
-          (window.location.href =
-            "https://drive.google.com/file/d/1XhCwrR_fmtCWzCEu4cI5rRZiPjMXCquX/view?usp=sharing")
-        }
-      >
-        Get My Resume
+      <Button>
+        <a
+          href="https://drive.google.com/file/d/1XhCwrR_fmtCWzCEu4cI5rRZiPjMXCquX/view?usp=sharing"
+          style={{
+            textDecoration: "underline",
+            color: "white",
+          }}
+        >
+          Get My Resume
+        </a>
       </Button>
     </LeftSection>
   </Section>
